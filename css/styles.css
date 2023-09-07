@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif, serif;
+    padding: var(--default--padding);
+    line-height: 2;
+}
+
+/* VARIABLES */
+:root {
+    --font--size--lg: 40px;
+    --font--size--md: 30px;
+    --default--padding: 20px;
+    --primary-color: burlywood;
+    --secondary-color: #6D2F1D;
+    --link-color: brown;
+}
+
+#menu {
+    width: 80%;
+    background-color: var(--primary-color);
+    margin: 5% auto;
+    padding: var(--default--padding);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* GENERAL PROPS */
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, serif;
+}
+
+h1 {
+    font-size: var(--font--size--lg);
+    margin-top: -15px;
+}
+
+
+h2 {
+    font-size: var(--font--size--md);
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+/* MAIN TITLE SUBHEADING */
+.established {
+    font-style: italic;
+    margin-top: -20px;
+}
+
+/* COFFEE AND DESSERT SECTION PROPS */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.coffee article, .desserts article {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* FOOTER */
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    background-color: var(--link-color);
+    color: var(--primary-color);
+}
+
+a:active {
+    color: black;
+}
